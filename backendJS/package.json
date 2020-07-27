@@ -1,0 +1,13 @@
+{
+  "name": "bad-translator",
+  "version": "1.0.0",
+  "description": "a simple backend relay for hitting the Google Translate API",
+  "author": "Aaron Cheng",
+  "license": "MIT",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "node-fetch": "^2.6.0"
+  }
+}
