@@ -4,7 +4,8 @@
   "description": "a simple backend relay for hitting the Google Translate API",
   "main": "web.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "app.js"
   },
   "keywords": [
     "bad",
