@@ -14,8 +14,8 @@
   "author": "Aaron Cheng",
   "license": "MIT",
   "repository": {
-    "type" : "git",
-    "url" : "https://github.com/aacheng17/BadTranslator"
+    "type": "git",
+    "url": "https://github.com/aacheng17/BadTranslator"
   },
   "dependencies": {
     "cors": "^2.8.5",
