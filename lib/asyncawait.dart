@@ -70,6 +70,7 @@ class _AsyncAwaitState extends State<AsyncAwait> {
   Widget _textFieldInput() {
     return TextField(
       controller: _textEditingController,
+      maxLength: 200
     );
   }
 
