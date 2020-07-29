@@ -1,16 +1,9 @@
-# translate_app
+# BadTranslator
 
-A new Flutter application.
+Translate whatever you want through ten different languages and then back to English.
 
-## Getting Started
+## How it works
 
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
-
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+This is the front end, built with Flutter and hosted on Firebase.  
+It queries a backend server (https://github.com/aacheng17/BadTranslatorAPI) for translations.  
+Get terrible translations to your heart's desire.
