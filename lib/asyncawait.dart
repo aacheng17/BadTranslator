@@ -26,7 +26,7 @@ class _AsyncAwaitState extends State<AsyncAwait> {
   }
 
   Future<String> _sendRequest(String s) async {
-    String url = "http://localhost:3000/api/search?q=" + Uri.encodeFull(s);
+    String url = "https://lit-ocean-80355.herokuapp.com/api/search?q=" + Uri.encodeFull(s);
     String data = await http.read(url);
     print(data);
     return jsonDecode(data)["results"];
