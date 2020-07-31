@@ -4,12 +4,12 @@ import 'package:flutter/material.dart';
 import 'package:random_words/random_words.dart';
 import 'package:http/http.dart' as http;
 
-class AsyncAwait extends StatefulWidget {
+class Translator extends StatefulWidget {
   @override
-  _AsyncAwaitState createState() => _AsyncAwaitState();
+  _Translator createState() => _Translator();
 }
 
-class _AsyncAwaitState extends State<AsyncAwait> {
+class _Translator extends State<Translator> {
   TextEditingController _textEditingController;
 
   bool _isLoading = false;
@@ -61,26 +61,26 @@ class _AsyncAwaitState extends State<AsyncAwait> {
 
   Widget _buttonRandomize() {
     return RaisedButton(
-      child: Text("Randomize"),
-      color: Colors.yellow,
-      onPressed: _randomize
+        child: Text("Randomize"),
+        color: Colors.yellow,
+        onPressed: _randomize
     );
   }
 
   Widget _textFieldInput() {
     return TextField(
-      controller: _textEditingController,
-      maxLength: 200
+        controller: _textEditingController,
+        maxLength: 200
     );
   }
 
   Widget _buttonTranslate() {
     return _isLoading
-      ? CircularProgressIndicator()
-      : RaisedButton(
-      child: Text("Translate"),
-      color: Colors.red,
-      onPressed: _asyncAction
+        ? CircularProgressIndicator()
+        : RaisedButton(
+        child: Text("Translate"),
+        color: Colors.red,
+        onPressed: _asyncAction
     );
   }
 
@@ -91,17 +91,16 @@ class _AsyncAwaitState extends State<AsyncAwait> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: Text("Bad Translator")),
-      body: Center(
-        child: Column(
-          children: [
-            _buttonRandomize(),
-            _textFieldInput(),
-            _buttonTranslate(),
-            _textResult()
-          ]
+        body: Center(
+            child: Column(
+                children: [
+                  _buttonRandomize(),
+                  _textFieldInput(),
+                  _buttonTranslate(),
+                  _textResult()
+                ]
+            )
         )
-      )
     );
   }
 }
