@@ -3,6 +3,7 @@ import 'dart:convert';
 import 'package:flutter/material.dart';
 import 'package:random_words/random_words.dart';
 import 'package:http/http.dart' as http;
+import 'dart:html' as html;
 
 class Translator extends StatefulWidget {
   @override
@@ -133,6 +134,10 @@ class _Translator extends State<Translator> with SingleTickerProviderStateMixin 
         Text("BadTranslator\n", style: TextStyle(fontSize: 30)),
         Text(
             "This site takes your input (in English only for now) and translates it through 10 random languages and then back to English."
+        ),
+        FlatButton(
+          child: Text("GitHub link", style: TextStyle(color: Colors.blue, decoration: TextDecoration.underline)),
+          onPressed: () => html.window.open('https://github.com/aacheng17/BadTranslator', 'new tab')
         )
       ]
     );
