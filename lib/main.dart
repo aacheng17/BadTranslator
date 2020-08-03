@@ -10,9 +10,10 @@ class MyApp extends StatelessWidget {
       title: 'BadTranslator',
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
-        primarySwatch: Colors.blue,
+        primarySwatch: Colors.orange,
+        fontFamily: 'Arimo'
       ),
-      home: Translator(),
+      home: Translator()
     );
   }
 }
